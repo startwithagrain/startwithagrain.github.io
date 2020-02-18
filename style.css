@@ -1,0 +1,258 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f8fd;
+  margin: 0;
+  padding: 0;
+  font-family: "IBM Plex Sans", sans-serif;
+  color: #111;
+  min-height: 100%;
+  min-width: 100%;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.main {
+  -ms-scroll-snap-type: y mandatory;
+  scroll-snap-type: y mandatory;
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+  background-image: url(./pigeon.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+a {
+  color: #2d3153;
+}
+
+section {
+  min-height: 100vh;
+  min-height: calc(var(--vh, 1vh) * 100);
+  min-height: -webkit-fill-available;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  max-width: 100%;
+  text-align: center;
+}
+
+.container {
+  margin: auto;
+}
+
+.dropdown {
+  display: none;
+  position: fixed;
+  padding-top: 10px;
+}
+.dropdown ul {
+  height: 270px;
+  margin-top: 0px;
+  list-style-type: none;
+  padding: 0px;
+  width: 150px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+}
+.dropdown li {
+  float: none;
+  margin: 0px;
+  padding: 6px;
+}
+
+.dropdownTrigger:hover .dropdown {
+  display: block;
+}
+
+/* Navbar */
+
+.logoWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  height: 50px;
+  text-decoration: none;
+}
+
+.logoText {
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  letter-spacing: 2px;
+  margin-left: 15px;
+  color: #413e66;
+  text-decoration: none;
+}
+
+.logo {
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, 0px, 1000px);
+  transform: translate3d(-50%, 0px, 1000px);
+  z-index: 1000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  margin: auto;
+  flex-direction: column;
+  transition: all 0.5s;
+}
+
+.headerScroll {
+  background-color: #f5f8fd;
+  box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+}
+.headerScroll .social-links {
+  display: none;
+}
+.headerScroll .navigation {
+  padding: 0px;
+}
+
+header .social-links {
+  height: 20px;
+  color: #2d3153;
+  text-align: right;
+  margin: auto;
+  width: 100%;
+  max-width: 1200px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+header .social-links a {
+  margin: 5px;
+}
+
+header .navigation {
+  width: 100%;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.headerPlaceholder {
+  height: 100px;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  margin-right: 0px;
+}
+
+nav > ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+}
+
+nav > ul li {
+  float: left;
+  margin: 10px;
+  margin-bottom: 0px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 1px;
+}
+
+nav > ul li.launchItem {
+  float: left;
+  margin-right: 0px;
+}
+
+nav > ul li a {
+  text-decoration: none;
+  font-weight: 600;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+a:hover {
+  color: #7c83b8;
+}
+
+/* Screens */
+
+#main {
+  background-color: #f5f8fd;
+}
+
+.onlyMobile {
+  display: none;
+}
+
+.hamburgerButton {
+  font-size: 36px;
+  margin-left: auto;
+}
+
+/* Mobile */
+
+@media (max-width: 765px) {
+  header .navigation {
+    padding: 0px;
+  }
+  .social-links {
+    display: none;
+  }
+  .onlyMobile {
+    display: flex;
+  }
+  .hiddenMobile {
+    display: none;
+  }
+
+  .logoWrapper {
+    height: 25px;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 25px;
+  }
+
+  .logoText {
+    font-size: 22px;
+  }
+
+  li {
+    padding: 0 20px 0 0;
+  }
+
+  .headerPlaceholder {
+    height: 156px;
+  }
+}
