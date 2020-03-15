@@ -1,3 +1,5 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 *,
 *:before,
 *:after {
@@ -65,7 +67,11 @@ section {
   max-width: 450px;
 }
 .pigeonBanner {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
   flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background-image: url(./pigeon.jpg);
   background-size: cover;
@@ -91,6 +97,8 @@ section {
   border-radius: 5px;
   background-color: #f5f8fd;
   overflow: hidden;
+  -webkit-box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
   box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
 }
 .dropdown li {
@@ -147,12 +155,19 @@ header {
   width: 100%;
   padding: 20px;
   margin: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
   transition: all 0.5s;
 }
 
 .headerScroll {
   background-color: #f5f8fd;
+  -webkit-box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
   box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
 }
 .headerScroll .social-links {
@@ -181,7 +196,12 @@ header .navigation {
   padding: 10px;
   max-width: 1300px;
   margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
 }
 
@@ -265,10 +285,17 @@ a:hover {
 /* Mobile */
 
 #navmenu {
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
   transition: all 0.2s;
 }
 #emailForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   padding: 20px;
   width: 600px;
@@ -288,6 +315,8 @@ a:hover {
   margin-top: 10px;
   margin-bottom: 10px;
   border-radius: 3px;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2),
+    0 1px 5px 0 rgba(0, 0, 0, 0.19) !important;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.19) !important;
 }
 #emailForm input:focus,
@@ -308,7 +337,11 @@ a:hover {
   background-color: rgba(255, 255, 255, 0.5);
   background-color: #f1e9c9;
   color: #2d3153;
+  -webkit-box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
   box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
   transition: all 0.5s;
 }
 #emailForm button:hover {
@@ -336,9 +369,16 @@ h2 {
   width: 850px;
   max-width: 100%;
   text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   background: rgba(255, 255, 255, 0.8);
+  -webkit-box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
   box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
   padding: 30px;
   border-radius: 5px;
@@ -354,6 +394,8 @@ h2 {
   height: 250px;
   float: left;
   margin-right: 20px;
+  -webkit-box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
   box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
   max-width: 100%;
 }
@@ -378,15 +420,29 @@ h2 {
   width: 800px;
   height: 500px;
   margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
   box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   background-color: rgba(255, 255, 255, 0.9);
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   max-width: 100%;
 }
 #unserearbeit > div > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 
@@ -397,7 +453,12 @@ h2 {
 }
 #team .teamSection {
   text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
   max-width: 100%;
   margin: auto;
@@ -414,9 +475,13 @@ h2 {
   height: 200px;
   border-radius: 10px;
   margin: auto;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
   transition: all 0.5s;
 }
 #team img:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
 #team > div {
@@ -431,8 +496,15 @@ h2 {
   list-style: none;
   padding: 0;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
   flex: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   max-width: 100%;
   width: 800px;
@@ -442,9 +514,19 @@ h2 {
 #faq .faqList > li {
   color: #2d3153;
   padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   cursor: pointer;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+}
+#faq .faqList > li span {
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
 #faq .faqList > li span {
   margin: auto;
@@ -465,9 +547,13 @@ h2 {
 }
 #faq .faqList > li label .toggler > span {
   margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
   cursor: pointer;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 #faq .faqList > li label .toggler > span img {
@@ -485,9 +571,16 @@ h2 {
 .faqContent {
   background-color: #2d3153;
   color: #f5f8fd;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
   flex: 1;
   padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 .faqContent p {
@@ -516,6 +609,8 @@ h2 {
 }
 
 .faqtoggle:checked + .toggler .faqContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   text-justify: inter-character;
   text-align: justify;
@@ -530,13 +625,23 @@ h2 {
 }
 
 .imgright {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
 }
 
 @media (max-width: 765px) {
   #team .teamSection {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
   .mobileMenu {
@@ -549,6 +654,8 @@ h2 {
     display: none;
   }
   .onlyMobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
   .hiddenMobile {
@@ -563,6 +670,8 @@ h2 {
   }
   #navmenu {
     z-index: 1;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
     transform: scale(0);
     position: absolute;
     top: 0;
@@ -575,12 +684,19 @@ h2 {
   }
   .mobileMenu #navmenu {
     visibility: visible;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
     transform: scale(1);
   }
   #navmenu ul {
     min-height: 600px;
     text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     width: 100%;
     padding: 0px;
@@ -588,19 +704,29 @@ h2 {
   #navmenu li {
     height: 60px;
     margin: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding: 0px;
   }
   #navmenu li a {
     height: 100%;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
   }
   #navmenu a:hover {
     background-color: #7c83b8;
     color: #f5f8fd;
+    -webkit-box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2),
+      0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
     box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2),
       0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
   }
@@ -645,7 +771,12 @@ h2 {
     color: #f5f8fd;
   }
   .article span {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
   .article img {
@@ -653,6 +784,9 @@ h2 {
     height: auto;
   }
   .imgright {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
   #faq .faqList {
