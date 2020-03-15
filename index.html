@@ -4,10 +4,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Berliner Stadttauben e.V.</title>
-    <link rel="icon" type="image/svg" href="assets/favicon.png" />
+    <title>Start with a grain - Privatinitiative</title>
+    <link rel="icon" type="image/svg" href="/favicon.png" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,600,700,700i|Montserrat:300,400,500,600,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran&display=swap" rel="stylesheet">
 
         <script src="https://kit.fontawesome.com/097043d6b0.js" crossorigin="anonymous"></script>
 
@@ -44,75 +45,205 @@
         </div>
         <div class="navigation">
             <img class="logo" src="logo.svg" alt="Berliner Stadttauben"/>
-            <i class="fas fa-bars onlyMobile hamburgerButton"></i>
-            <nav class="hiddenMobile">
+            <i id="hamburger" class="fas fa-bars onlyMobile hamburgerButton"></i>
+            <i id="closeHamburger" class="fas fa-times onlyMobile hamburgerButton"></i>
+            <nav id="navmenu">
                 <ul>
                     <li>
-                        <a href="/#main">Home</a>
-                    </li>
-                    <li>
-                        <a href="/#main">About</a>
-                    </li>
-                    <li>
-                        <a href="/#main">Something</a>
-                    </li>
-                    <li>
-                        <a href="/#main">Something</a>
-                    </li>
-                    <li>
-                        <a href="/#main">Something</a>
+                        <a href="/#home">Home</a>
                     </li>
                     <li class="dropdownTrigger">
-                        <a href="/#virtualRoomsScreen">Something</a>
+                        <a href="/#main">Über uns</a>
                         <div class="dropdown">
                             <ul>
-                                <li><a href="/#virtualRoomsScreen">Blah 1</a></li>
-                                <li><a href="/#nesScreen">Blah 2</a></li>
-                                <li><a href="/#nesScreen">Blah 3</a></li>
+                                <li><a href="/#team">Team</a></li>
+                                <li><a href="/#unserearbeit">Unsere Arbeit</a></li>
                             </ul>
                         </div>
                     </li>
                     <li>
-                        <a href="/#main">Contact</a>
+                        <a href="/#news">News</a>
+                    </li>
+                    <li>
+                        <a href="/#faq">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="/#main">Aktiv werden</a>
+                    </li>
+                    <li>
+                        <a href="/#kontakt">Kontakt</a>
                     </li>
                 </ul>
             </nav>
         </div>
     </header>
     <div class="main">
-    <section>
+    <section id="home">
         <div class="headerPlaceholder"></div>
-        <div class="container">
-            <div class="sectionText">
-                <h1>Some slogan</h1>
-                <p>Some subtitle</p>
+            <div class="pigeonBanner">
+            <div class="coverText">
+                <h1>
+                    "The greatness of a nation and its moral progress can be judged by the way its animals are treated."
+
+</h1>
+                    ― Mahatma Gandhi -
             </div>
+            </div>
+    </section>
+    <section id="team">
+        <div>
+        <h1>Meet the team</h1>
+        <div>
+        <div class="teamSection">
+        <div>
+            <img src="./jen.jpg"/>
+            <div>Jen</div>
+        </div>
+        <div>
+            <img src="./sarah.jpg"/>
+            <div>Sarah</div>
+        </div>
+        <div>
+            <img src="./gina.jpg"/>
+            <div>Gina</div>
+        </div>
+        <div>
+            <img src="./haukur.jpg"/>
+            <div>Haukur</div>
+        </div>
+        </div>
+        <div>
         </div>
     </section>
-    <section>
-        <div class="headerPlaceholder"></div>
-        <div class="container">
-            <div class="sectionText">
-                <h1>Some slogan</h1>
-                <p>Some subtitle</p>
-            </div>
+    <section id="unserearbeit">
+        <div>
+                <h1>Unsere Arbeit</h1>
+                <div>
+        <p>Wir setzen uns in unserer Freizeit ehrenamtlich für berliner Stadttauben ein. 
+        Dabei betreuen wir täglich Futterplätze, sichern und versorgen (oft über Monate) verletzte oder erkrankte Stadttauben.</p>
+<p>Für die Zukunft möchten wir uns auf regionaler Ebene mehr für die Rechte und das stille Leiden der Stadttauben einsetzen und streben für Berlin das erfolgreiche Stadttaubenkonzept nach dem 
+<a href="https://www.augsburg.de/umwelt-soziales/umwelt/umweltstadt-augsburg/stadttaubenkonzept#:~:text=Das%20Augsburger%20Stadttaubenkonzept%20ist%20ein,Eier%20gegen%20Attrappen%20ausgetauscht%20werden.">
+Augsburger Modell</a> an.
+        </p>
+                </div>
         </div>
     </section>
-    <section>
+    <section id="news">
         <div class="headerPlaceholder"></div>
         <div class="container">
-            <div class="sectionText">
-                <h1>Some slogan</h1>
-                <p>Some subtitle</p>
-            </div>
+                <div class="article">
+                    <h2>Grundstück in Berlin gesucht!</h2>
+                    <span>
+                    <img src="./pigeon6.jpg"/>
+                    <p>
+                    Derzeit sind auf der Suche nach einem Grundstück für einen eigenen Taubenschlag oder eine Voliere im Süden von Berlin (Steglitz/Schöneberg/Friedenau/Zehlendorf/Wilmersdorf). </p>
+                    <p>Die Betreuung der Stadttauben und die Finanzierung würden wir komplett übernehmen.</p>
+                    <p>Ideen oder konkrete Vorschläge gerne via <a href="mailto:startwithagrain@gmail.com">startwithagrain@gmail.com</a>.</p>
+                    <span>
+                </div>
         </div>
     </section>
-    <section>
+    <section id="faq">
+        <div class="headerPlaceholder"></div>
+        <div class="container">
+                <h1>Tauben FAQ</h1>
+                <ul class="faqList">
+                    <li>
+                        <label for="content">
+                        <input type="checkbox" id="content" class="faqtoggle" />
+                        <div class="toggler">
+                        <span>
+                                <img src="./pigeon.svg"/> 
+                            <span>
+Ist eine Taube ein Wildvogel?
+</span></span>
+                        <div class="faqContent">
+Nein, Stadttauben sind verwilderte Haustiere und sind die Nachkommen ausgesetzter oder entflogener Haustauben. Haustauben stammen ursprünglich von der Felsentaube ab, welche der Mensch domestiziert hat. Ringeltauben hingegen zählen zur Gruppe der Wildvögel.
+
+
+                            </div>
+                        </div>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="content2">
+                        <input type="checkbox" id="content2" class="faqtoggle" />
+                        <div class="toggler">
+                        <span>
+                                <img src="./save.svg"/> 
+                            <span>
+Welche Taube benötigt meine Hilfe?
+</span></span>
+                        <div class="faqContent">
+                            Generell müssen folgende Tauben gesichert werden und benötigen erfahrene Pflegestellen:
+                            <ul>
+<li><a target="_blank" href="/pics/Geschwächte Tauben .jpg">Geschwächte Tauben</a></li>
+<li><a target="_blank" href="/pics/Verletzung.jpg">Tauben mit Verletzung</a></li>
+<li><a target="_blank" href="/pics/Verschnürungen.jpg">Tauben mit verschnürten Füßen</a></li>
+<li><a target="_blank" href="/pics/neurologisch.jpg">Tauben mit neurologischen Symptomen</a></li>
+<li><a target="_blank" href="/pics/Flugunfähigkeit.jpg">Flugunfähige Tauben</a></li>
+<li><a target="_blank" href="/pics/Jungtier.jpg">Jungtiere</a></li>
+<li><a target="_blank" href="/pics/Küken.jpg">Küken</a></li>
+<li><a target="_blank" href="/pics/Brieftaube.jpg">Brieftauben</a></li>
+<li><a target="_blank" href="/pics/Hochzeitstaube.jpg">Rasse- und Hochzeitstauben</a></li>
+</li>
+                            </ul>
+
+
+                            </div>
+                        </div>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="content3">
+                        <input type="checkbox" id="content3" class="faqtoggle" />
+                        <div class="toggler">
+                        <span>
+                                <img src="./healthcare-and-medical.svg"/> 
+                            <span>
+Ich habe eine verletzte Taube in Berlin gefunden, was soll ich tun?
+</span></span>
+                        <div class="faqContent">
+                            <ol>
+                            <li>Die Fundtaube muss sofort gesichert werden(Sichern= die Taube zu fangen/ aufzuheben).</li>
+
+                            <li>Nach Sicherung sollte die Fundtaube warm und stabil gesetzt werden, in einen <a target="_blank" href="/pics/stoffbeutel.jpg">Stoffbeutel</a> oder gepolsterten Karton mit <a target="_blank" href="/pics/handtuchnest.jpg">Handtuchnest</a> und Luftlöchern.</li>
+
+                            <li>Bitte der Fundtaube kein Wasser oder Nahrung verabreichen.</li>
+
+                            <li>Nun sollte ein vogelkundiger Tierarzt oder ein erfahrener Taubenpäppler aufgesucht werden, hierzu können folgende Vereine oder Gruppen kontaktiert werden: </li>
+
+                            </ol>
+                            <p/>
+                            <ul>
+                                <li><a target="_blank" href="https://www.facebook.com/groups/1456814514633989/">Freunde der Stadttauben in Berlin</a></li>
+                                <li><a target="_blank" href="https://www.facebook.com/notkleintiere.de/">Gnadenhof & Wildtierrettung Notkleintiere e.V.</a></li>
+                                <li><a target="_blank" href="https://www.facebook.com/Wildvogelhilfe-Berlin-BB-293253454433238/">Wildvogelhilfe Berlin / BB</a></li>
+                                <li><a target="_blank" href="https://www.facebook.com/groups/Wildvogelhilfe/">Wildvogelhilfe-Notfälle</a></li>
+                            </ul>
+
+                            <p>Wichtig: Der Großteil Berliner Tierärzte schläfert erfahrungsgemäß sofort Tauben ein oder nimmt sie als Patient nicht auf. Daher empfehlen wir, sich tierärztliche Empfehlungen aus den oben genannten Gruppen zu holen.</p>
+
+                            </div>
+                        </div>
+                        </label>
+                    </li>
+                </ul>
+        </div>
+    </section>
+    <section class="blue" id="kontakt">
         <div class="headerPlaceholder"></div>
         <div class="container">
             <div class="sectionText">
-                <h1>Some slogan</h1>
-                <p>Some subtitle</p>
+                <form id="emailForm">
+                    <label for="name">Name *</label>
+                    <input id="name" name="name"type="text"/>
+                    <label for="email">E-Mail *</label>
+                    <input type="email" name="email" id="email"/>
+                    <label for="message">Message *</label>
+                    <textarea name="message" id="message"></textarea>
+                    <button type="submit">Send</button>
+                </form>
             </div>
         </div>
     </section>
@@ -129,6 +260,12 @@ function scrollFunction() {
     document.getElementById("header").classList.remove("headerScroll");
   }
 }
+  document.getElementById("hamburger").onclick = () => {
+    document.body.classList.add("mobileMenu");
+  }
+  document.getElementById("closeHamburger").onclick = () => {
+    document.body.classList.remove("mobileMenu");
+  }
 </script>
 
 </body>
