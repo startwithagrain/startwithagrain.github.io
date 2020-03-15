@@ -9,6 +9,9 @@
 * {
   color: #413e66;
 }
+ul {
+  list-style-type: circle;
+}
 
 body {
   background-color: #f5f8fd;
@@ -408,6 +411,7 @@ h2 {
   font-size: 32px;
   font-weight: 800;
   margin-top: 0;
+  margin-bottom: 0;
 }
 .blue {
   background-color: #2d3153;
@@ -426,6 +430,7 @@ h2 {
   box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
   padding: 30px;
   border-radius: 5px;
+  margin: 50px;
 }
 .article p {
   margin: 3px;
@@ -433,9 +438,8 @@ h2 {
   text-align: justify;
   font-size: 18px;
 }
-.article span img {
+.article img {
   height: 250px;
-  width: 300px;
   float: left;
   margin-right: 20px;
   box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
@@ -457,7 +461,7 @@ h2 {
   text-transform: uppercase;
   font-size: 32px;
 }
-#unserearbeit > div {
+#unserearbeit > .container {
   width: 800px;
   height: 500px;
   margin: auto;
@@ -570,6 +574,9 @@ h2 {
   display: flex;
   flex-direction: column;
 }
+.faqContent p {
+  margin: 5px;
+}
 .faqContent * {
   color: #f5f8fd;
 }
@@ -599,4 +606,9 @@ h2 {
 }
 #faq .container {
   background-color: rgba(255, 255, 255, 0.9);
+}
+.date {
+  color: #999;
+  margin-left: auto;
+  margin-bottom: 10px;
 }

@@ -39,9 +39,7 @@
             <a>
             <i class="fab fa-facebook"></i>
             </a>
-            <a>
-            <i class="fas fa-envelope"></i>
-            </a>
+                <a href="mailto:startwithagrain@gmail.com"><i class="fas fa-envelope"></i></a>
         </div>
         <div class="navigation">
             <img class="logo" src="logo.svg" alt="Berliner Stadttauben"/>
@@ -53,7 +51,7 @@
                         <a href="/#home">Home</a>
                     </li>
                     <li class="dropdownTrigger">
-                        <a href="/#main">Über uns</a>
+                        <a href="/#team">Über uns</a>
                         <div class="dropdown">
                             <ul>
                                 <li><a href="/#team">Team</a></li>
@@ -67,8 +65,14 @@
                     <li>
                         <a href="/#faq">FAQ</a>
                     </li>
-                    <li>
-                        <a href="/#main">Aktiv werden</a>
+                    <li class="dropdownTrigger">
+                        <a href="/#mitmachen">Aktiv werden</a>
+                        <div class="dropdown">
+                            <ul>
+                                <li><a href="/#mitmachen">Mitmachen</a></li>
+                                <li><a href="/#sachspenden">Sachspenden</a></li>
+                            </ul>
+                        </div>
                     </li>
                     <li>
                         <a href="/#kontakt">Kontakt</a>
@@ -116,10 +120,11 @@
         </div>
     </section>
     <section id="unserearbeit">
-        <div>
+        <div class="headerPlaceholder"></div>
+        <div class="container">
                 <h1>Unsere Arbeit</h1>
                 <div>
-        <p>Wir setzen uns in unserer Freizeit ehrenamtlich für berliner Stadttauben ein. 
+        <p>Wir setzen uns in unserer Freizeit ehrenamtlich für Berliner Stadttauben ein. 
         Dabei betreuen wir täglich Futterplätze, sichern und versorgen (oft über Monate) verletzte oder erkrankte Stadttauben.</p>
 <p>Für die Zukunft möchten wir uns auf regionaler Ebene mehr für die Rechte und das stille Leiden der Stadttauben einsetzen und streben für Berlin das erfolgreiche Stadttaubenkonzept nach dem 
 <a href="https://www.augsburg.de/umwelt-soziales/umwelt/umweltstadt-augsburg/stadttaubenkonzept#:~:text=Das%20Augsburger%20Stadttaubenkonzept%20ist%20ein,Eier%20gegen%20Attrappen%20ausgetauscht%20werden.">
@@ -133,6 +138,7 @@ Augsburger Modell</a> an.
         <div class="container">
                 <div class="article">
                     <h2>Grundstück in Berlin gesucht!</h2>
+                    <span class="date">März 2020</span>
                     <span>
                     <img src="./pigeon6.jpg"/>
                     <p>
@@ -140,6 +146,22 @@ Augsburger Modell</a> an.
                     <p>Die Betreuung der Stadttauben und die Finanzierung würden wir komplett übernehmen.</p>
                     <p>Ideen oder konkrete Vorschläge gerne via <a href="mailto:startwithagrain@gmail.com">startwithagrain@gmail.com</a>.</p>
                     <span>
+                </div>
+                <div class="article">
+                    <h2>Wir suchen deutschlandweite Endplätze!</h2>
+                    <span class="date">März 2020</span>
+                    <div style="display:flex; flex-direction: row;">
+                    <span>
+                    <p>Für unsere Pflegetauben sind wir auf der Suche nach artgerechten und liebevollen Endplätzen:</p>
+                    <ul>
+                    <li>Stadttauben mit diversen Behinderungen</li>
+                    <li>Stadttauben mit Paramyxovirose</li>
+                    <li>Handaufzuchten</li>
+                    <li>Brief- und Rassetauben</li>
+                    </ul>
+                    </span>
+                    <img style="margin-left: 50px;float:right" src="./pigeon10.jpg"/>
+                    </div>
                 </div>
         </div>
     </section>
@@ -205,7 +227,7 @@ Ich habe eine verletzte Taube in Berlin gefunden, was soll ich tun?
 </span></span>
                         <div class="faqContent">
                             <ol>
-                            <li>Die Fundtaube muss sofort gesichert werden(Sichern= die Taube zu fangen/ aufzuheben).</li>
+                            <li>Die Fundtaube muss sofort gesichert werden (Sichern= die Taube zu fangen/ aufzuheben).</li>
 
                             <li>Nach Sicherung sollte die Fundtaube warm und stabil gesetzt werden, in einen <a target="_blank" href="/pics/stoffbeutel.jpg">Stoffbeutel</a> oder gepolsterten Karton mit <a target="_blank" href="/pics/handtuchnest.jpg">Handtuchnest</a> und Luftlöchern.</li>
 
@@ -228,7 +250,111 @@ Ich habe eine verletzte Taube in Berlin gefunden, was soll ich tun?
                         </div>
                         </label>
                     </li>
+                    <li>
+                        <label for="content4">
+                        <input type="checkbox" id="content4" class="faqtoggle" />
+                        <div class="toggler">
+                        <span>
+                                <img src="./Krankheiten.svg"/> 
+                            <span>
+Übertragen Tauben Krankheiten auf den Menschen?
+</span></span>
+                        <div class="faqContent">
+<p>Nein. Stadttauben verbreiten entgegengesetzter Vorurteile keine Krankheiten auf den Menschen.</p>
+<p>Zu dieser Thematik gibt es verschiedene wissenschaftliche Studien die es verifizieren, beispielsweise durch die Tierärztin Dr. Kneidl-Fenske <a target="_blank" href="https://www.erna-graff-stiftung.de/wp-content/uploads/2017/08/Gef%C3%A4hrdungseinstufung-der-Stadttauben.pdf">hier</a>.</p>
+
+                            </div>
+                        </div>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="content5">
+                        <input type="checkbox" id="content5" class="faqtoggle" />
+                        <div class="toggler">
+                        <span>
+                                <img src="./seed.svg"/> 
+                            <span>
+Ist das Füttern von Tauben in Berlin erlaubt?
+</span></span>
+                        <div class="faqContent">
+
+                            <p>Ja. Im öffentlichen Raum von Berlin ist es erlaubt, Tauben zu füttern. </p>
+                            <p>Dabei sollte darauf geachtet werden, dass am Ende keine Körner auf dem Boden liegen bleiben.</p>
+                            </div>
+                        </div>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="content6">
+                        <input type="checkbox" id="content6" class="faqtoggle" />
+                        <div class="toggler">
+                        <span>
+                                <img src="./gluten.svg"/> 
+                            <span>
+Womit können Tauben in Berlin gefüttert werden?
+</span></span>
+                        <div class="faqContent">
+    <ul>
+        <li>Ideal sind fertige Futtermischungen für Tauben, erhältlich in Online-Shops & Tierfutterläden</li>
+        <li>Körner: Weizen, Hirse, Sonnenblumenkerne, getrockneter Mais und Erbsen, Buchweizen, Gerste, Wicken und Kardisaat</li>
+        <li>Bitte auch den Tauben ganzjährig Wasser anbieten, Tauben finden in Berlin kaum saubere Wasserquellen und sind am dehydrieren</li>
+    </ul>
+
+
+                            </div>
+                        </div>
+                        </label>
+                    </li>
                 </ul>
+        </div>
+    </section>
+    <section id="mitmachen">
+        <div class="headerPlaceholder"></div>
+        <div class="container">
+                <div class="article">
+                    <h2>Mitmachen</h2>
+                    <span>
+                    <img src="./mitmachen.jpg"/>
+                    <p>
+                    <p>Wir freuen uns über neue Gesichter, die uns in verschiedenen Ebenen aktiv unterstützen wollen. </p>
+
+                    <p>Dabei gibt es vielseitige Tätigkeitsfelder, wie beispielsweise; Aufklärungsarbeit, Betreuung von Futterplätzen, Pflegestelle werden, Unterstützung bei Sicherungen, juristische Schreiben formulieren und und und. </p>
+
+                    <p>Aktuell sind wir speziell auf der Suche nach Personen, die sich im Tierschutzgesetz sehr gut auskennen und Personen, die uns bei den täglichen Fütterungen im Süden von Berlin unterstützen wollen.</p>
+
+                    <p>Des Weiteren suchen wir dringend deutschlandweit Endplätze für Stadttauben mit Behinderung, Stadttauben mit PMV und Brief- und Rassetauben.</p>
+
+                    <p>Ihr möchtet das Leben der Berliner Stadttauben zum Positiven verändern?</p>
+
+                    <p>Dann schreibt uns bei Facebook oder eine E-Mail, wir freuen uns auf dich.</p>
+
+</p>
+                    <span>
+                </div>
+        </div>
+    </section>
+    <section id="sachspenden">
+        <div class="headerPlaceholder"></div>
+        <div class="container">
+                <div class="article">
+                    <h2>Sachspenden</h2>
+                    <div style="display:flex; flex-direction: row;">
+                    <span>
+                        <p>
+                            Wir freuen uns sehr über folgende Sachspenden:
+                        </p>
+                            <ul style="margin-left: 10px;">
+                                <li>Aufzuchtfutter A21 - Nutribird</li>
+                                <li>Futtermischungen für Tauben</li>
+                                <li>Spritzen (1 ml, 5 ml, 10 ml, 20 ml)</li>
+                                <li>Wickelunterlagen für Einmalgebrauch</li>
+                                <li>Softboxen / geschlossener Welpenlaufstall</li>
+                                <li>Näpfe </li>
+                            </ul>
+                    </span>
+                    <img style="margin-left: 50px;float:right" src="./sachspenden.jpg"/>
+                    </div>
+                </div>
         </div>
     </section>
     <section class="blue" id="kontakt">
