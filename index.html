@@ -361,11 +361,11 @@ Womit können Tauben in Berlin gefüttert werden?
             <div class="sectionText">
                     <form id="emailForm" action="https://mailthis.to/startwithagrain@gmail.com" method="POST">
                         <label for="name">Name *</label>
-                        <input id="name" name="name"type="text"/>
+                        <input id="name" name="name"type="text" required/>
                         <label for="email">E-Mail *</label>
-                        <input type="email" name="email" id="email"/>
+                        <input type="email" name="email" id="email" required />
                         <label for="message">Message *</label>
-                        <textarea name="message" id="message"></textarea>
+                        <textarea name="message" id="message" required></textarea>
                         <button type="submit">Send</button>
                     </form>
                 </div>
@@ -393,7 +393,7 @@ Womit können Tauben in Berlin gefüttert werden?
     document.getElementById("emailForm").onsubmit = (e) => {
         var form = e.target;
         var button = form.querySelector("button");
-        button.textContent = "Loading...";
+        button.textContent = "Sending...";
         Array.from(form.querySelectorAll("input,textarea")).forEach(el => {el.readOnly=true});
         fetch(form.action, {
             method: form.method,
