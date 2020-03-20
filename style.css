@@ -10,7 +10,7 @@
 }
 * {
   color: #413e66;
-  word-break: break-all;
+  word-break: break-word;
 }
 ul {
   list-style-type: circle;
@@ -665,8 +665,8 @@ h2 {
     display: block;
     z-index: 2;
     position: absolute;
-    top: 20px;
-    right: 30px;
+    top: 10px;
+    right: 20px;
   }
   #navmenu {
     z-index: 1;
