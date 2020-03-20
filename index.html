@@ -359,39 +359,55 @@ Womit können Tauben in Berlin gefüttert werden?
         <div class="headerPlaceholder"></div>
         <div class="container">
             <div class="sectionText">
-                <form id="emailForm">
-                    <label for="name">Name *</label>
-                    <input id="name" name="name"type="text"/>
-                    <label for="email">E-Mail *</label>
-                    <input type="email" name="email" id="email"/>
-                    <label for="message">Message *</label>
-                    <textarea name="message" id="message"></textarea>
-                    <button type="submit">Send</button>
-                </form>
+                    <form id="emailForm" action="https://mailthis.to/startwithagrain@gmail.com" method="POST">
+                        <label for="name">Name *</label>
+                        <input id="name" name="name"type="text"/>
+                        <label for="email">E-Mail *</label>
+                        <input type="email" name="email" id="email"/>
+                        <label for="message">Message *</label>
+                        <textarea name="message" id="message"></textarea>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
             </div>
+        </section>
         </div>
-    </section>
-    </div>
 
-<script>
-lazyload();
-window.onscroll = function() {scrollFunction()};
+    <script>
+    lazyload();
+    window.onscroll = function() {scrollFunction()};
 
-function scrollFunction() {
-  if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
-    document.getElementById("header").classList.add("headerScroll");
-  } else {
-    document.getElementById("header").classList.remove("headerScroll");
-  }
-}
-  document.getElementById("hamburger").onclick = () => {
-    document.body.classList.add("mobileMenu");
-  }
-  document.getElementById("closeHamburger").onclick = () => {
-    document.body.classList.remove("mobileMenu");
-  }
-</script>
+    function scrollFunction() {
+    if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+        document.getElementById("header").classList.add("headerScroll");
+    } else {
+        document.getElementById("header").classList.remove("headerScroll");
+    }
+    }
+    document.getElementById("hamburger").onclick = () => {
+        document.body.classList.add("mobileMenu");
+    }
+    document.getElementById("closeHamburger").onclick = () => {
+        document.body.classList.remove("mobileMenu");
+    }
+    document.getElementById("emailForm").onsubmit = (e) => {
+        var form = e.target;
+        var button = form.querySelector("button");
+        button.textContent = "Loading...";
+        Array.from(form.querySelectorAll("input,textarea")).forEach(el => {el.readOnly=true});
+        fetch(form.action, {
+            method: form.method,
+            body: new FormData(form)
+	}).then(function() {
+            form.querySelector("button").textContent = "Send"
+            Array.from(form.querySelectorAll("input,textarea")).forEach(el => {el.readOnly=false});
+	    alert("THANK YOU!");
+            form.reset()
+	});
+        e.preventDefault();
+    }
+    </script>
 
-</body>
+    </body>
 
 </html>
