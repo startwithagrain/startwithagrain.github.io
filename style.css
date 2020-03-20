@@ -808,4 +808,7 @@ h2 {
   #unserearbeit p {
     padding: 30px;
   }
+  .dropdown {
+    display: none !important;
+  }
 }

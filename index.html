@@ -41,7 +41,7 @@
             </a>
                 <a href="mailto:startwithagrain@gmail.com"><i class="fas fa-envelope"></i></a>
         </div>
-        <div class="navigation">
+        <div class="navigation" id="navigation">
             <img class="logo" src="logo.svg" alt="Berliner Stadttauben"/>
             <i id="hamburger" class="fas fa-bars onlyMobile hamburgerButton"></i>
             <i id="closeHamburger" class="fas fa-times onlyMobile hamburgerButton"></i>
@@ -390,6 +390,14 @@ Womit können Tauben in Berlin gefüttert werden?
     document.getElementById("closeHamburger").onclick = () => {
         document.body.classList.remove("mobileMenu");
     }
+    document.getElementById("closeHamburger").onclick = () => {
+        document.body.classList.remove("mobileMenu");
+    }
+    document.getElementById("navigation").querySelectorAll("a").forEach(el => {
+        el.onclick = () => {
+            document.body.classList.remove("mobileMenu");
+        }
+    })
     document.getElementById("emailForm").onsubmit = (e) => {
         var form = e.target;
         var button = form.querySelector("button");
